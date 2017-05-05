@@ -32,14 +32,6 @@ var Remarkable = (function (_React$Component) {
   }
 
   _createClass(Remarkable, [{
-    key: 'getDefaultProps',
-    value: function getDefaultProps() {
-      return {
-        container: 'div',
-        options: {}
-      };
-    }
-  }, {
     key: 'render',
     value: function render() {
       var Container = this.props.container;
@@ -87,6 +79,11 @@ var Remarkable = (function (_React$Component) {
 
   return Remarkable;
 })(_react2['default'].Component);
+
+Remarkable.defaultProps = {
+  container: 'div',
+  options: {}
+};
 
 exports['default'] = Remarkable;
 module.exports = exports['default'];
